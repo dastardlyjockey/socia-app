@@ -17,8 +17,6 @@ export default function Home() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Navbar />
         <div className={"app"}>Football</div>
       </ThemeProvider>
     </>
