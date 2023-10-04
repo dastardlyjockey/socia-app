@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { themeSettings } from "@/themes/theme";
 import Navbar from "@/components/Navbar";
+import LoginPage from "@/components/Auth";
 
 export default function Home() {
   const modeString = useSelector((state: RootState) => state.mode);
@@ -17,7 +18,10 @@ export default function Home() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <div className={"app"}>Football</div>
+        <div className={"app"}>
+          {/* AUTH COMPONENT */}
+          <LoginPage />
+        </div>
       </ThemeProvider>
     </>
   );
